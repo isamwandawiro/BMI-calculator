@@ -1,6 +1,6 @@
 function calculateBMI() {
-  const height = parseFloat(document.getElementById("height").value) / 100;
-  const weight = parseFloat(document.getElementById("weight").value);
+  let height = parseFloat(document.getElementById("height").value) / 100;
+  let weight = parseFloat(document.getElementById("weight").value);
   const bmi = (weight / (height * height)).toFixed(2);
 
   let resultText = `Your BMI is ${bmi}.`;
@@ -16,4 +16,6 @@ function calculateBMI() {
   }
 
   document.getElementById("result").innerText = resultText;
+
+  
 }
